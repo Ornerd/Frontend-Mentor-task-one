@@ -1,0 +1,60 @@
+// @import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit&display=swap);
+
+$White: hsl(0, 0%, 100%);
+$Light-gray: hsl(212, 45%, 89%);
+$Grayish-blue: hsl(220, 15%, 55%);
+$Dark-blue: hsl(218, 44%, 22%);
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: $Light-gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main {
+    width: 300px;
+    height: 480px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items:flex-start;
+    padding: 8px;
+    border-radius: 8px;
+
+    section:first-child {
+        width: 284px;
+        height: 284px;
+        background-color: $Grayish-blue;
+        border-radius: 8px;
+
+        img {
+            width: 100%;
+            border-radius: 8px;
+        }
+    }
+
+    section:nth-child(2){
+        height: 50%;
+        text-align: center;
+        padding-top: 8px;
+
+        h1 {
+            margin-bottom: 8px;
+        }
+
+
+        p {
+            padding: 2px;
+        }
+    }
+}
